@@ -1,0 +1,55 @@
+* {
+    font-family: sans-serif;
+    font-size: 24px;
+    transition: 0.2s;
+}
+h1 {
+    font-size: 48px;
+}
+section {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#inputField {
+    width: 300px;
+    height: 30px;
+    border: 2px solid gainsboro;
+    border-radius: 12px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.key {
+    border: 2px solid blue;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+.key:active {
+    background-color: white;
+    color: blue;
+}
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .line {
+    display: flex;
+    flex-direction: row;
+  }
+  .key {
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  img {
+    height: 50px;
+  }

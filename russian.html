@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Экранная клавиатура</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="keyboard_section">
+        <h1>КЛАВИАТУРА</h1>
+      <input type="text" id="inputField" />
+      <div class="keyboard">
+        <div class="line">
+            <div class="key" onclick="handleKey('`')">`</div>
+            <div class="key" onclick="handleKey('1')">1</div>
+            <div class="key" onclick="handleKey('2')">2</div>
+            <div class="key" onclick="handleKey('3')">3</div>
+            <div class="key" onclick="handleKey('4')">4</div>
+            <div class="key" onclick="handleKey('5')">5</div>
+            <div class="key" onclick="handleKey('6')">6</div>
+            <div class="key" onclick="handleKey('7')">7</div>
+            <div class="key" onclick="handleKey('8')">8</div>
+            <div class="key" onclick="handleKey('9')">9</div>
+            <div class="key" onclick="handleKey('0')">0</div>
+            <!-- <div class="key" onclick="deleteKey()">Backspace</div> -->
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('     ')">Tab</div>
+            <div class="key" onclick="handleKey('Й')">Й</div>
+            <div class="key" onclick="handleKey('Ц')">Ц</div>
+            <div class="key" onclick="handleKey('У')">У</div>
+            <div class="key" onclick="handleKey('К')">К</div>
+            <div class="key" onclick="handleKey('Е')">Е</div>
+            <div class="key" onclick="handleKey('Н')">Н</div>
+            <div class="key" onclick="handleKey('Г')">Г</div>
+            <div class="key" onclick="handleKey('Ш')">Ш</div>
+            <div class="key" onclick="handleKey('Щ')">Щ</div>
+            <div class="key" onclick="handleKey('З')">З</div>
+            <div class="key" onclick="handleKey('Х')">Х</div>
+            <div class="key" onclick="handleKey('Ъ')">Ъ</div>
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('Ф')">Ф</div>
+            <div class="key" onclick="handleKey('Ы')">Ы</div>
+            <div class="key" onclick="handleKey('В')">В</div>
+            <div class="key" onclick="handleKey('А')">А</div>
+            <div class="key" onclick="handleKey('П')">П</div>
+            <div class="key" onclick="handleKey('Р')">Р</div>
+            <div class="key" onclick="handleKey('О')">О</div>
+            <div class="key" onclick="handleKey('Л')">Л</div>
+            <div class="key" onclick="handleKey('Д')">Д</div>
+            <div class="key" onclick="handleKey('Ж')">Ж</div>
+            <div class="key" onclick="handleKey('Э')">Э</div>
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('Я')">Я</div>
+            <div class="key" onclick="handleKey('Ч')">Ч</div>
+            <div class="key" onclick="handleKey('С')">С</div>
+            <div class="key" onclick="handleKey('М')">М</div>
+            <div class="key" onclick="handleKey('И')">И</div>
+            <div class="key" onclick="handleKey('Т')">Т</div>
+            <div class="key" onclick="handleKey('Ь')">Ь</div>
+            <div class="key" onclick="handleKey('Б')">Б</div>
+            <div class="key" onclick="handleKey('Ю')">Ю</div>
+            <div class="key" onclick="handleKey('.')">.</div>
+            <div class="key" onclick="handleKey(',')">,</div>
+            <div class="key" onclick="handleKey('?')">?</div>
+            <a href="index.html"><img src="download.png" alt="lang"></a>
+        </div>
+        <div class="key" onclick="handleKey(' ')">Space</div>
+      </div>
+    </section>
+    <script>
+      function handleKey(value) {
+        document.getElementById("inputField").value += value
+      }
+    //   function deleteKey() {
+    //     document.getElementById("inputField").value -= ""
+    //   }
+    </script>
+  </body>
+</html>

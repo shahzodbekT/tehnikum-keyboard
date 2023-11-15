@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screen keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="keyboard_section">
+        <h1>KEYBOARD</h1>
+      <input type="text" id="inputField" />
+      <div class="keyboard">
+        <div class="line">
+            <div class="key" onclick="handleKey('`')">`</div>
+            <div class="key" onclick="handleKey('1')">1</div>
+            <div class="key" onclick="handleKey('2')">2</div>
+            <div class="key" onclick="handleKey('3')">3</div>
+            <div class="key" onclick="handleKey('4')">4</div>
+            <div class="key" onclick="handleKey('5')">5</div>
+            <div class="key" onclick="handleKey('6')">6</div>
+            <div class="key" onclick="handleKey('7')">7</div>
+            <div class="key" onclick="handleKey('8')">8</div>
+            <div class="key" onclick="handleKey('9')">9</div>
+            <div class="key" onclick="handleKey('0')">0</div>
+            <!-- <div class="key" onclick="deleteKey()">Backspace</div> -->
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('     ')">Tab</div>
+            <div class="key" onclick="handleKey('Q')">Q</div>
+            <div class="key" onclick="handleKey('W')">W</div>
+            <div class="key" onclick="handleKey('E')">E</div>
+            <div class="key" onclick="handleKey('R')">R</div>
+            <div class="key" onclick="handleKey('T')">T</div>
+            <div class="key" onclick="handleKey('Y')">Y</div>
+            <div class="key" onclick="handleKey('U')">U</div>
+            <div class="key" onclick="handleKey('I')">I</div>
+            <div class="key" onclick="handleKey('O')">O</div>
+            <div class="key" onclick="handleKey('P')">P</div>
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('A')">A</div>
+            <div class="key" onclick="handleKey('S')">S</div>
+            <div class="key" onclick="handleKey('D')">D</div>
+            <div class="key" onclick="handleKey('F')">F</div>
+            <div class="key" onclick="handleKey('G')">G</div>
+            <div class="key" onclick="handleKey('H')">H</div>
+            <div class="key" onclick="handleKey('J')">J</div>
+            <div class="key" onclick="handleKey('K')">K</div>
+            <div class="key" onclick="handleKey('L')">L</div>
+            <div class="key" onclick="handleKey(';')">;</div>
+        </div>
+        <div class="line">
+            <div class="key" onclick="handleKey('Z')">Z</div>
+            <div class="key" onclick="handleKey('X')">X</div>
+            <div class="key" onclick="handleKey('C')">C</div>
+            <div class="key" onclick="handleKey('V')">V</div>
+            <div class="key" onclick="handleKey('B')">B</div>
+            <div class="key" onclick="handleKey('N')">N</div>
+            <div class="key" onclick="handleKey('M')">M</div>
+            <div class="key" onclick="handleKey(',')">,</div>
+            <div class="key" onclick="handleKey('.')">.</div>
+            <div class="key" onclick="handleKey('?')">?</div>
+            <a href="russian.html"><img src="download.png" alt="lang"></a>
+        </div>
+        <div class="key" onclick="handleKey(' ')">Space</div>
+      </div>
+    </section>
+    <script>
+      function handleKey(value) {
+        document.getElementById("inputField").value += value
+      }
+    //   function deleteKey() {
+    //     document.getElementById("inputField").value -= ""
+    //   }
+    </script>
+  </body>
+</html>
